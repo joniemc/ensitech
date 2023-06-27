@@ -1,0 +1,9 @@
+[submodule "ensitechsecurity"]
+	path = ensitechsecurity
+	url = https://github.com/joniemc/ensitechsecurity.git
+[submodule "ensitechproxy"]
+	path = ensitechproxy
+	url = https://github.com/joniemc/ensitechproxy.git
+[submodule "ensitechfrontend"]
+	path = ensitechfrontend
+	url = https://github.com/joniemc/ensitechfrontend.git
