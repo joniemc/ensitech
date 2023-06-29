@@ -1,0 +1,207 @@
+{
+	"info": {
+		"_postman_id": "4c575c3e-d76f-4205-8710-b4773775e74c",
+		"name": "ensitechcollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10161565"
+	},
+	"item": [
+		{
+			"name": "characters",
+			"item": [
+				{
+					"name": "characters/v1/get/all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/characters/v1/get/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"characters",
+								"v1",
+								"get",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "characters/v1/get/byid/{characterId}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/characters/v1/get/byid/1011334",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"characters",
+								"v1",
+								"get",
+								"byid",
+								"1011334"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "loggs",
+			"item": [
+				{
+					"name": "loggs/v1/get/all",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTY5MDU3ODA0MiwibmFtZSI6ImFkbWluIn0.X1XuQLKII4FIy5tHqCMNLaBkiN98bzs8T0U-BprgvLY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/users/v1/get/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"users",
+								"v1",
+								"get",
+								"all"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "marvelexample",
+			"item": [
+				{
+					"name": "exampleall",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gateway.marvel.com:443/v1/public/characters?ts=1&apikey=4381496f3eef33e6baf39c290cabc235&hash=9082aadc85744dff7dae621c6cf727c1",
+							"protocol": "https",
+							"host": [
+								"gateway",
+								"marvel",
+								"com"
+							],
+							"port": "443",
+							"path": [
+								"v1",
+								"public",
+								"characters"
+							],
+							"query": [
+								{
+									"key": "ts",
+									"value": "1"
+								},
+								{
+									"key": "apikey",
+									"value": "4381496f3eef33e6baf39c290cabc235"
+								},
+								{
+									"key": "hash",
+									"value": "9082aadc85744dff7dae621c6cf727c1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "examplebyid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gateway.marvel.com:443/v1/public/characters/1011334?ts=1&apikey=4381496f3eef33e6baf39c290cabc235&hash=9082aadc85744dff7dae621c6cf727c1",
+							"protocol": "https",
+							"host": [
+								"gateway",
+								"marvel",
+								"com"
+							],
+							"port": "443",
+							"path": [
+								"v1",
+								"public",
+								"characters",
+								"1011334"
+							],
+							"query": [
+								{
+									"key": "ts",
+									"value": "1"
+								},
+								{
+									"key": "apikey",
+									"value": "4381496f3eef33e6baf39c290cabc235"
+								},
+								{
+									"key": "hash",
+									"value": "9082aadc85744dff7dae621c6cf727c1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "clientmodule/api/v1/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"admin\",\r\n    \"password\":\"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/clientmodule/api/v1/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"clientmodule",
+						"api",
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
