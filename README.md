@@ -31,7 +31,7 @@ those projects are backend projects, contains the business layer.
     # ensitechfrontend
     this is a frontend module
 
-    #Compilation
+    #building project
     1. clone the repository and checkout develop banch
     2. excecute npm install
     3. excecute npm run start (becouse this project use a proxy config for CORDS permissions)
